@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@layer components {
+    .container{
+        @apply max-w-[1050px]
+    }
+}
+
+.hero__wrapper{
+    height: 100vh;
+    background: url(../img/main-bg.png);
+    background-size: cover;
+    background-position: top;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 15px;
+    background-color: #ff6551;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__nav ul,
+    .footer__last{
+        display: none;
+    }
+}
